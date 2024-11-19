@@ -1,0 +1,20 @@
+{
+  "name": "ultraship-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "argon2": "^0.41.1",
+    "dotenv": "^16.4.5",
+    "graphql-middleware": "^6.1.35",
+    "graphql-shield": "^7.6.5",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

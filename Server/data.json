@@ -1,0 +1,165 @@
+{
+    "employees": [
+      {
+        "ID": 1,
+        "name": "John Doe",
+        "age": 28,
+        "level": "Senior",
+        "subjects": ["Sales", "Customer Service"],
+        "attendance": "90%"
+      },
+      {
+        "ID": 2,
+        "name": "Jane Smith",
+        "age": 34,
+        "level": "Junior",
+        "subjects": ["Inventory", "Operations"],
+        "attendance": "77%"
+      },
+      {
+        "ID": 3,
+        "name": "Michael Johnson",
+        "age": 45,
+        "level": "Senior",
+        "subjects": ["Management", "Sales"],
+        "attendance": "85%"
+      },
+      {
+        "ID": 4,
+        "name": "Emily Davis",
+        "age": 23,
+        "level": "Trainee",
+        "subjects": ["Customer Service", "Sales"],
+        "attendance": "95%"
+      },
+      {
+        "ID": 5,
+        "name": "David Wilson",
+        "age": 30,
+        "level": "Junior",
+        "subjects": ["Inventory", "Stocking"],
+        "attendance": "80%"
+      },
+      {
+        "ID": 6,
+        "name": "Sarah Miller",
+        "age": 38,
+        "level": "Senior",
+        "subjects": ["Finance", "Operations"],
+        "attendance": "70%"
+      },
+      {
+        "ID": 7,
+        "name": "Daniel Brown",
+        "age": 26,
+        "level": "Junior",
+        "subjects": ["Sales", "Customer Support"],
+        "attendance": "88%"
+      },
+      {
+        "ID": 8,
+        "name": "Olivia Taylor",
+        "age": 32,
+        "level": "Senior",
+        "subjects": ["Management", "Customer Service"],
+        "attendance": "92%"
+      },
+      {
+        "ID": 9,
+        "name": "James Anderson",
+        "age": 29,
+        "level": "Trainee",
+        "subjects": ["Sales", "Stocking"],
+        "attendance": "78%"
+      },
+      {
+        "ID": 10,
+        "name": "Mia Thomas",
+        "age": 40,
+        "level": "Senior",
+        "subjects": ["Operations", "Inventory"],
+        "attendance": "85%"
+      },
+      {
+        "ID": 11,
+        "name": "Lucas Carter",
+        "age": 27,
+        "level": "Junior",
+        "subjects": ["Customer Service", "Inventory"],
+        "attendance": "82%"
+      },
+      {
+        "ID": 12,
+        "name": "Sophia Lee",
+        "age": 31,
+        "level": "Senior",
+        "subjects": ["Sales", "Operations"],
+        "attendance": "94%"
+      },
+      {
+        "ID": 13,
+        "name": "William Harris",
+        "age": 36,
+        "level": "Senior",
+        "subjects": ["Customer Support", "Sales"],
+        "attendance": "75%"
+      },
+      {
+        "ID": 14,
+        "name": "Isabella Clark",
+        "age": 25,
+        "level": "Junior",
+        "subjects": ["Stocking", "Inventory"],
+        "attendance": "80%"
+      },
+      {
+        "ID": 15,
+        "name": "Ethan Walker",
+        "age": 33,
+        "level": "Senior",
+        "subjects": ["Operations", "Sales"],
+        "attendance": "88%"
+      },
+      {
+        "ID": 16,
+        "name": "Ava Rodriguez",
+        "age": 29,
+        "level": "Trainee",
+        "subjects": ["Customer Service", "Inventory"],
+        "attendance": "93%"
+      },
+      {
+        "ID": 17,
+        "name": "Benjamin Lewis",
+        "age": 41,
+        "level": "Senior",
+        "subjects": ["Finance", "Customer Service"],
+        "attendance": "76%"
+      },
+      {
+        "ID": 18,
+        "name": "Charlotte Allen",
+        "age": 24,
+        "level": "Junior",
+        "subjects": ["Sales", "Stocking"],
+        "attendance": "85%"
+      },
+      {
+        "ID": 19,
+        "name": "Mason Young",
+        "age": 38,
+        "level": "Senior",
+        "subjects": ["Inventory", "Management"],
+        "attendance": "80%"
+      },
+      {
+        "ID": 20,
+        "name": "Amelia Scott",
+        "age": 32,
+        "level": "Junior",
+        "subjects": ["Operations", "Sales"],
+        "attendance": "90%"
+      }
+    ]
+  }
+  
