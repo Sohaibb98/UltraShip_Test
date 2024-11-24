@@ -13,8 +13,8 @@
 
 
 ## Here is the Input Schema for Employee:
-   ` name: String,
+    name: String,
     age: Int,
     level: String,
     attendance: Int,
-    subjects: [String]`
+    subjects: [String]
