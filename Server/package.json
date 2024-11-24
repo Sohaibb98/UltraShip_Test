@@ -11,10 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-server": "^3.13.0",
     "argon2": "^0.41.1",
     "dotenv": "^16.4.5",
     "graphql-middleware": "^6.1.35",
     "graphql-shield": "^7.6.5",
-    "jsonwebtoken": "^9.0.2"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.2",
+    "nodemon": "^3.1.7"
   }
 }

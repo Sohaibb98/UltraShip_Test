@@ -54,8 +54,22 @@ type Query {
     getEmployees(limit: Int, page: Int, employeeSort: EmployeeSort): [Employee]
 }
 
+type User {
+  id: ID
+  username: String
+  password: String
+  token: String
+}
+
+input userInput {
+  username: String!
+  password: String!
+}
+
 type Mutation {
     createEmployee(employeeInput: EmployeeInput): Employee!
     editEmployee(ID: ID!, employeeInput: EmployeeInput): Employee!
+    register(input: userInput): User
+    login(input: userInput): User
 }
 `

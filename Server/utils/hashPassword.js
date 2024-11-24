@@ -1,28 +1,26 @@
+const { hash, verify } = require('argon2');
+const jwt = require('jsonwebtoken');
 
-// @/src/utils/hashPassword.js
-import { hash } from "argon2";
-
-export const hashPassword = async (password) => {
+const hashPassword = async (password) => {
   return await hash(password);
 };
 
-// @/src/utils/verifyPassword.js
-import { verify } from "argon2";
-
-export const verifyPassword = async (hash, password) => {
+const verifyPassword = async (hash, password) => {
   return await verify(hash, password);
 };
 
-// @/src/utils/signToken.js
-import jwt from "jsonwebtoken";
-
-export const signToken = (data) => {
+const signToken = (data) => {
   return jwt.sign(data, process.env.JWT_SECRET);
 };
 
-// @/src/utils/verifyToken.js
-import jwt from "jsonwebtoken";
-
-export const verifyToken = (token) => {
+const verifyToken = (token) => {
+  console.log("VERIFYING...");
   return jwt.verify(token, process.env.JWT_SECRET);
+};
+
+module.exports = {
+  hashPassword,
+  verifyPassword,
+  signToken,
+  verifyToken,
 };

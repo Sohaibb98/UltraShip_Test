@@ -1,4 +1,6 @@
 const Employee = require('../models/Employee');
+const User = require('../models/User');
+const { signToken, verifyPassword, hashPassword } = require('../utils/hashPassword');
 
 const sortOrderMap = { ASC: 1, DESC: -1 };
 
@@ -38,6 +40,39 @@ module.exports = {
         },
     },
     Mutation: {
+        async register (_, args) {
+            const { password, ...rest } = args.input;
+          
+            const hashedPassword = await hashPassword(password);
+          
+            const result = await User.create({ ...rest, password: hashedPassword });
+          
+            return {
+              id: result.id,
+              username: result.username,
+              password: result.password,
+              token: signToken({ userId: result.id }),
+            };
+        },
+
+        async login(_, args) {
+            const { password, username } = args.input;
+
+            const result = await User.findOne({ where: { username } });
+          
+            const isValidPassword = await verifyPassword(result.password, password);
+          
+            if (!isValidPassword) {
+              throw new Error("Invalid password");
+            }
+          
+            return {
+              id: result.id,
+              username: result.username,
+              token: signToken({ userId: result.id }),
+            };
+        },
+
         async createEmployee(_, { employeeInput: { name, age, level, subjects, attendance } }) {
             const createdEmployee = new Employee({
                 name,
